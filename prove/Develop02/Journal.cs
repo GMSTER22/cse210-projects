@@ -50,7 +50,8 @@ public class Journal
 
   }
 
-  public void Save( string filename ) {
+  public void Save( string filename ) 
+  {
 
     using ( StreamWriter outputFile = new StreamWriter(filename) )
     {

@@ -34,7 +34,8 @@ class Program
             Console.Write( "\nWhat would you like to do? " );
             int userChoice = int.Parse( Console.ReadLine() );
 
-            if ( userChoice == 1 ) {
+            if ( userChoice == 1 ) 
+            {
 
                 string prompt = journal.GeneratePrompt();
 
@@ -48,32 +49,42 @@ class Program
 
                 journal.AddEntry( newEntry );
 
-            } else if ( userChoice == 2 ) {
+            } 
+            else if ( userChoice == 2 ) 
+            {
 
-                if ( journal._entryList.Count == 0 ) {
+                if ( journal._entryList.Count == 0 ) 
+                {
 
                     Console.WriteLine( "The entry list is empty" );
 
-                } else {
+                } 
+                else 
+                {
 
                     journal.Display();
 
                 }
 
-            } else if ( userChoice == 3 ) {
+            } 
+            else if ( userChoice == 3 ) 
+            {
 
                 Console.WriteLine( "What is the filename?" );
                 string filename = Console.ReadLine();
 
                 bool isFileExist = File.Exists( filename );
 
-                if ( isFileExist ) {
+                if ( isFileExist ) 
+                {
 
                     journal.Load( filename );
 
                     Console.WriteLine( "File was loaded. You can now display it." );
 
-                } else {
+                } 
+                else 
+                {
 
                     string currentDirectory = System.Environment.CurrentDirectory;
 
@@ -81,17 +92,20 @@ class Program
 
                     Console.WriteLine( $"Sorry, but the file \"{filename}\" doesn't exist." );
 
-                    if ( files.Count() == 0 ) {
+                    if ( files.Count() == 0 ) 
+                    {
 
                         Console.WriteLine( "Your folder is empty." );
 
-                    } else {
+                    }
+                     else 
+                    {
 
                         foreach (string file in files)
                         {
 
                             Console.WriteLine( "Here is the list of existing files." );                            
-                            Console.WriteLine( $"   =====> {Path.GetFileName(file)}" );
+                            Console.WriteLine( $"=====> {Path.GetFileName(file)}" );
 
                         }
 
@@ -99,13 +113,18 @@ class Program
 
                 }
 
-            } else if ( userChoice == 4 ) {
+            } 
+            else if ( userChoice == 4 ) 
+            {
 
-                if (journal._entryList.Count == 0) {
+                if (journal._entryList.Count == 0) 
+                {
 
                     Console.WriteLine("The entry list is empty, please write something to save. Thanks");
 
-                } else {
+                } 
+                else 
+                {
 
                     Console.WriteLine( "What is the filename?" );
                     string filename = Console.ReadLine();
@@ -114,11 +133,15 @@ class Program
 
                 }
 
-            } else if ( userChoice == 5 ) {
+            } 
+            else if ( userChoice == 5 ) 
+            {
 
                 Console.WriteLine("Good Bye");
 
-            } else {
+            } 
+            else 
+            {
 
                 Console.WriteLine($"Sorry, \"{userChoice}\" is not an option.");
 
