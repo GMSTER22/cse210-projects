@@ -27,7 +27,9 @@ public class ReflectingActivity : Activity
   {
     Random rnd = new Random();
     int questionIndex = rnd.Next(_questions.Count - 1);
-    return _questions[questionIndex];
+    string question = _questions[questionIndex];
+    _questions.RemoveAt(questionIndex);
+    return question;
   }
 
   public string GetRandomPrompt()
@@ -73,7 +75,18 @@ public class ReflectingActivity : Activity
       Console.Clear();
       while (DateTime.Now < endTime)
       {
-        Console.Write($"> {GetRandomQuestion()} ");
+        if (_questions.Count > 1)
+        {
+          Console.Write($"> {GetRandomQuestion()} ");
+        }
+        else
+        {
+          Console.WriteLine("\nCongrats, you went through all the questions.");
+
+          TimeSpan ts = DateTime.Now - startTime;
+          SetDuration((int)ts.TotalSeconds);
+          endTime = startTime;
+        }
         Spinner(5);
         Console.WriteLine();
       }
