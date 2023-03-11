@@ -1,7 +1,7 @@
 class EternalQuest {
 
-  int _totalPoints = 0;
-  List<Goal> _goalsList = new List<Goal>();
+  private int _totalPoints = 0;
+  private List<Goal> _goalsList = new List<Goal>();
 
   public void DisplayMenu()
   {
