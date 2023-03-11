@@ -1,4 +1,4 @@
-50
-SimpleGoal:##simple goal##simple goal##50##True
-EternalGoal:##eternal goal##testing eternal goal##100
-ChecklistGoal:##checklist goal##testing checklist goal##50##300##3##0
+250
+SimpleGoal:##Give a talk##Speak in Sacrament meeting when asked##100##True
+EternalGoal:##Study the scriptures##Study for at least 10 minutes##50
+ChecklistGoal:##Attend the temple##Attend and perform any ordinance##50##500##3##1

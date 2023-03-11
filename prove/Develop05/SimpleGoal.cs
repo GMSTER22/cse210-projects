@@ -15,7 +15,11 @@ public class SimpleGoal : Goal
   public override void RecordEvent()
   {
     _isCompleted = true;
-    Console.WriteLine($"Congratulations! You have earned {_pointsToGain} points!");
+    AnimateWord("WONDERFULLY DONE", "-");
+    Console.WriteLine();
+    AnimateWord("YOU SHOULD BE PROUD OF YOURSELF", "*");
+    Console.WriteLine($"Congratulations!!! You have earned {_pointsToGain} points!");
+    Spinner(1);
   }
   public override bool IsCompleted()
   {
@@ -30,4 +34,5 @@ public class SimpleGoal : Goal
 
     return $"{isChecked} {_name} ({_description})";
   }
+
 }

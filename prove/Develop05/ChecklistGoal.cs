@@ -43,7 +43,11 @@ public class ChecklistGoal : Goal
       {
         int points = _pointsToGain + _bonusPoints; 
 
-        Console.WriteLine($"Congratulations! You have earned {points} points!");
+        AnimateWord("WONDERFULLY DONE", "-");
+        Console.WriteLine();
+        AnimateWord("YOU SHOULD BE PROUD OF YOURSELF", "*");
+        Console.WriteLine($"Congratulations!!! You have earned {points} points!");
+        Spinner(1);
       }
       else
       {
