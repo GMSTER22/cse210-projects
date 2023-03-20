@@ -50,7 +50,6 @@ public abstract class Goal
       Console.Write(" ");
     }
 
-
   }
 
   public void Spinner(int time)
