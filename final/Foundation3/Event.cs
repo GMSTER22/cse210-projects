@@ -1,4 +1,4 @@
-class Event
+public class Event
 {
   private string _title;
   private string _description;
