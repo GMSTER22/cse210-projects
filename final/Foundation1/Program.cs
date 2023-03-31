@@ -49,8 +49,8 @@ class Program
         comment6._text = "I want to see what they do with Nitendo on the next switch";
 
         Comment comment7 = new Comment();
-        comment6._name = "Ben";
-        comment6._text = "Better take advantage of A.I. and learn it to gain an advantage, A.I. is here to stay.";
+        comment7._name = "Ben";
+        comment7._text = "Better take advantage of A.I. and learn it to gain an advantage, A.I. is here to stay.";
 
         video2.AddComment(comment4);
         video2.AddComment(comment5);
@@ -65,16 +65,16 @@ class Program
         video3._length = 3300;
 
         Comment comment8 = new Comment();
-        comment7._name = "Brenda P";
-        comment7._text = "Anyone else enjoy watching food documentaries?";
+        comment8._name = "Brenda P";
+        comment8._text = "Anyone else enjoy watching food documentaries?";
 
         Comment comment9 = new Comment();
-        comment8._name = "Jenni Franklin";
-        comment8._text = "Never let a company tell u only the good things about a product. I'm teaching my children early in life.";
+        comment9._name = "Jenni Franklin";
+        comment9._text = "Never let a company tell u only the good things about a product. I'm teaching my children early in life.";
 
         Comment comment10 = new Comment();
-        comment9._name = "Olivia";
-        comment9._text = "I love watching food documentaries.";
+        comment10._name = "Olivia";
+        comment10._text = "I love watching food documentaries.";
 
         video3.AddComment(comment8);
         video3.AddComment(comment9);

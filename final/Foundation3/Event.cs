@@ -39,8 +39,5 @@ public class Event
   public string GetStandardDetails()
   {
     return $"{_title}: {_description} \n{_date} - {_time} \n{_address.GetAddress()}";
-    // Console.WriteLine($"{_title}: {_description}");
-    // Console.WriteLine($"{_dateTime} - {_time}");
-    // Console.WriteLine($"{_address.GetAddress()}");
   }
 }
